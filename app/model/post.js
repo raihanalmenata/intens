@@ -1,15 +1,16 @@
-const { model, database } = require('./model');
+const connection = require('../helper/connection');
+const info = require('../helper/info');
 
-const postDB = () => {
-    const obj = {'field1' : 'value1' , 'field2' : 'value2'};
-    model((db)=>{
-        const dbo = db.db(database);
-        dbo.collection(collection).insertOne(obj, (err,res)=>{
+module.exports = (req, res , next)=>{
+    const collection = req.baseUrl.replace('/','');
+    const data = { ...req[info.locVar]};
+
+    connection((mongoDB)=>{
+        mongoDB.db(info.database).collection(collection).insertOne(data,(err,res)=>{
             if (err) throw err;
-            console.log('Document Inserted!');
-            db.close();
-        })
-    });
+            console.log(data)
+            mongoDB.close();
+        });
+    })
+    next();
 }
-
-module.exports = postDB;
