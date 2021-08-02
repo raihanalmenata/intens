@@ -9,3 +9,5 @@ exports.projectsFields=['judul','deskripsi','gambar'];
 
 exports.locVar = 'locVar';
 exports.admPass = 'intens';
+
+//Let's add something down here..
