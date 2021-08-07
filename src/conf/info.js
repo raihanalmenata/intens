@@ -7,7 +7,7 @@ exports.DBuri = 'mongodb+srv://username1:pass1@cluster0.y4t2w.mongodb.net/intens
 exports.currentDatabase = 'intens';
 
 // Server Port
-exports.port = 3000;
+exports.port = 80;
 
 // Collection List for Initiation
 exports.collectionsList = ['clients','projects','teams', 'logs'];
