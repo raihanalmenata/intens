@@ -10,7 +10,7 @@ const {port} = require('./conf/info');
 const initCollection = require('./app/model/init');
 
 // Start App.
-app.listen(port, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log(`Listening on port : ${port}`);
 })
 
