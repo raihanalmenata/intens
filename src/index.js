@@ -1,7 +1,9 @@
 const express = require('express');
+const cors =  require('cors');
 
 // The Main App.
 const app = express();
+app.use(cors());
 
 // Port.
 const {port} = require('./conf/info');
