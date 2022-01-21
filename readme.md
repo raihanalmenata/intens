@@ -1,7 +1,7 @@
 # RestFul Back-End Services with Express.js
 
 ## General Description
-This repo contains the source code of back-end services for the company websites of  **PT Inti Konten Indonesia.**  It's built to serve the company profile through a single page webapp in an **rest api architecture** . The services developed in ` node.js ` using the ` express.js ` frameworks. The services uses ` MongoDB ` as its only database. 
+This repo contains the source code of back-end services for a company website.  It's built to serve the company profile through a single page webapp in an **rest api architecture** . The services developed in ` node.js ` using the ` express.js ` frameworks. The services uses ` MongoDB ` as its only database. 
 
 ## Patterns & Implementation
 Despite of using express.js as it's frameworks and implements its base workflow, this service has some additional implementation & patterns built upon its development. Such as follow :
